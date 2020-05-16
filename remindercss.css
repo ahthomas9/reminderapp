@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+}
+body {
+    text-align: center;
+    line-height: 1.6;
+    background: linear-gradient(white, #E5F7C4);
+    overflow-y: hidden;
+}
+h3 {
+    font-style: italic;
+    color: grey;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* RESET */
+#clearAll {
+    position: fixed;
+    display: block;
+    padding-top: 50px;
+    right: 70px;
+    font-size: 25px;
+    opacity: 0.9;
+    color: #FF846A;
+    cursor: pointer;
+}
+
+/* TITLE */
+.title {
+    margin-top: 250px;
+    font-size: 50px;
+    color: #900C3F;
+    font-family: 'Arial Narrow';
+}
+
+/* SET REMINDER */
+.remind {
+    margin-top: 50px;
+}
+#input {
+    border-top: none;
+    border-right: none;
+    border-width: 2px;
+    width: 75%;
+    padding: 5px 15px;
+    border-color: #900C3F;
+}
+    ::placeholder {
+        color: #900C3F;
+        opacity: 0.5;
+        font-weight: italic;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #900C3F;
+        opacity: 0.5;
+        font-weight: italic;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #900C3F;
+        opacity: 0.5;
+        font-weight: italic;
+    }
+#setReminder {
+    border-radius: 35px;
+    border-style: none;
+    padding: 7px 15px;
+    background-color: #EC8F10 ;
+    color: white;
+    cursor: pointer;
+}
+
+/* DISPLAY PORTION */
+.ask {
+    margin-top: 100px;
+}
+#reminderList {
+    padding: 7px 45px;
+    margin-top: 10px;
+    border-style: none;
+    color: #900C3F;
+    font-size: 25px;
+}
+#toggleList {
+    margin-left: 5%;
+}
+li {
+    list-style-position: outside;
+    list-style-type: circle;
+    text-align: left;
+    margin-left: 25%;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#trash {
+    border-style: none;
+    background-color: transparent;
+    margin-right: 45%;
+    float: right;
+    color: #900C3F;
+    font-style: none;
+}
+#trash:hover {
+    cursor: pointer;
+}
+
+/* TOGGLE */
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reminder App</title>
+    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery/UI library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+    <!--FontAwesome-->
+        <script src="https://use.fontawesome.com/b5f074d7a9.js"></script>
+    
+    <!--CSS style/Fonts-->
+        <link rel="stylesheet" type="text/css" href="remindercss.css">
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+
+<body>
+
+<!--RESET-->
+<div class="container-fluid">
+        <span title="Remove All Reminders"><i class="fa fa-window-close" id="clearAll"></i></span>
+</div>
+<!--/RESET-->
+
+<!--TITLE-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="title">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">Leave a Reminder:</div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+</div>
+<!--TITLE-->
+
+<!--ADD REMINDER-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="remind">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <input type="text" id="input" placeholder="Begin typing here...">
+                <button type="submit" id="setReminder" value="Submit Reminder">Set <i class="fa fa-angle-double-right"></i></button>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+</div>
+<!--/ADD REMINDER-->
+
+<!--LIST-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="ask">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <h3>Display your reminders:</h3>
+                <h4><button class="btn btn-default" id="reminderList" onclick="toggleList();">
+                    <i class="fa fa-angle-double-down" id="dropdown"></i>
+                </button>
+                </h4>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="toggleList" style="display: none;">
+            <div class="col-sm-12"><ul id="displayList"></ul></div>
+        </div>
+    </div>
+</div>
+<!--/LIST-->
+</div>
+</body>
+<script src="reminderjs.js"></script>
+</html>
