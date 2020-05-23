@@ -2,7 +2,9 @@
 A Bootstrap reminder app, allows for the leaving of reminders... The information is locally stored with JSON, and each item of the list can be individually removed as well as there being a fixed-position button to remove all of them. They're presented in an unordered list that is hidden by default but can be set to show, both of which have down and up chevrons, respectfully. There is also a submit button to click but the enter key also functions as a submit for ease of navigation. When the values of the localStorage key are empty, the key is then moved.
 
 ## Technologies
-- HTML, CSS, Javascript
+- HTML
+- CSS
+- Javascript
 
 ## Libraries
 - Bootstrap 3
